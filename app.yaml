@@ -1,6 +1,4 @@
-#application: eggizoapp
 service: hopebytheroadside
-#version: 1
 runtime: php55
 api_version: 1
 threadsafe: yes
