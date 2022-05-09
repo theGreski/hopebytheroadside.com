@@ -1,0 +1,56 @@
+#application: eggizoapp
+service: hopebytheroadside
+#version: 1
+runtime: php55
+api_version: 1
+threadsafe: yes
+
+default_expiration: "5m"
+
+# Do not upload
+skip_files:
+- cloud.bat
+
+handlers:
+
+# Robots
+- url: /robots\.txt
+  static_files: robots.txt
+  upload: robots\.txt
+  secure: always
+
+
+# Static resources folder
+- url: /static
+  static_dir: static
+  secure: always
+  expiration: "1h"
+- url: /media
+  static_dir: media
+  secure: always
+  expiration: "14d"
+- url: /carousel
+  static_dir: carousel
+  secure: always
+  expiration: "14d"
+
+
+# Root of folder
+- url: /
+  script: index.php
+  secure: always
+
+
+# Application scripts
+- url: /gospel.php
+  script: gospel.php
+  secure: always
+- url: /gospel-explained.php
+  script: gospel-explained.php
+  secure: always
+- url: /audiovideo.php
+  script: audiovideo.php
+  secure: always
+- url: /contact.php
+  script: contact.php
+  secure: always
