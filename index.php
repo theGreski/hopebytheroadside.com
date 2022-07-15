@@ -129,7 +129,7 @@
 			<div class="container pb-5">
 				
 				<p class="lead">
-					Perhaps you're on our website because you noticed one of our billboards or trailers at the roadside around U.K and Ireland or Maybe you've seen one of our billboards in Uganda. No matter how you found our website&hellip;we're glad you did!
+					Perhaps you're on our website because you noticed one of our billboards or trailers at the roadside around U.K, Ireland, Canada, St Lucia or you've seen one of our billboards in Uganda or DRC. No matter how you found our website&hellip;we're glad you did!
 				</p>
 				<p class="lead">
 					Hope By The Roadside wants to share the good news of the Christian gospel with as many people as possible. In a world with so much uncertainty and bad news, we're glad to be able to share the certainty of the gospel with you. This is a message about God's salvation&hellip;a message which can truly give you eternal hope!
