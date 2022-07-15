@@ -126,6 +126,18 @@
 						</div>
 					</div>
 					
+					<div class="col-md-5 mb-4">
+						<h5>Gospel message in french by Jean-Luc Hainaut</h5>
+						<div class="embed-responsive">
+							<audio controls preload='auto' class="full-width">
+								<source src='media/French_Gospel_Message.m4a' type='audio/mp4'>
+								<!-- fallback for non supporting browsers goes here -->
+								Your browser does not support the audio element.
+								<a href='media/French_Gospel_Message.m4a'> Download the audio file.</a>
+							</audio>
+						</div>
+					</div>
+					
 					
 					
 				</div>
