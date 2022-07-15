@@ -98,6 +98,15 @@
 						<div class="carousel-item">
 							<img src="carousel/IMG-20190418-WA0000b.jpg" class="d-block w-100" alt="...">
 						</div>
+						<div class="carousel-item">
+							<img src="carousel/37241526-19B5-4772-B6A5-B87425F50536_1099x618.jpeg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="carousel/A2B567D0-3530-42F5-8BAC-05DA84B260E3_1100x620.jpeg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="carousel/C9AD8F72-BE60-4D8E-B443-0ED7CA80B01A_1100x618.jpeg" class="d-block w-100" alt="...">
+						</div>
 					</div>
 					<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
