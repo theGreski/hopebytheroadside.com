@@ -93,7 +93,7 @@
 							<img src="carousel/IMG-20180821-WA0005b.jpg" class="d-block w-100" alt="...">
 						</div>
 						<div class="carousel-item">
-							<img src="carousel/IMG-20180821-WA0006b.jpg" class="d-block w-100" alt="...">
+							<img src="carousel/80F3C363-2031-4CD7-A2BF-BDE1BA605100_1100x619.jpeg" class="d-block w-100" alt="...">
 						</div>
 						<div class="carousel-item">
 							<img src="carousel/IMG-20190418-WA0000b.jpg" class="d-block w-100" alt="...">
