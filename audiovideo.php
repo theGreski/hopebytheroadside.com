@@ -121,12 +121,6 @@
 					</div>-->
 					
 					<div class="col-md-5 mb-4">
-						<div class="embed-responsive embed-responsive-16by9">
-							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NfXybggH4Qo?rel=0" allowfullscreen></iframe>
-						</div>
-					</div>
-					
-					<div class="col-md-5 mb-4">
 						<h5>Gospel message in french by Jean-Luc Hainaut</h5>
 						<div class="embed-responsive">
 							<audio controls preload='auto' class="full-width">
@@ -138,6 +132,11 @@
 						</div>
 					</div>
 					
+					<div class="col-md-5 mb-4">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NfXybggH4Qo?rel=0" allowfullscreen></iframe>
+						</div>
+					</div>
 					
 					
 				</div>
