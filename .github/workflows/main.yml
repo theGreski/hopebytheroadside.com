@@ -1,5 +1,3 @@
-# .github/workflows/deploy.yaml
-
 name: Deploy to Google App Engine
 
 # Controls when the workflow will run
