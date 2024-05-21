@@ -17,8 +17,17 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      - name: Set up secret file
+      env:
+        GCP_PROJECT: ${{ secrets.GCP_PROJECT }}
+        GCP_SA_KEY: ${{ secrets.DEBUG_SECRET_KEY }}
+      run: |
+        echo $GCP_PROJECT >> GCP_PROJECT.txt
+        echo $GCP_SA_KEY >> GCP_SA_KEY.txt
+      
       - name: Display secret
-        run: echo ${{ secrets.GCP_SA_KEY }} | sed 's/./& /g'
+        run: |
+          echo ${{ secrets.GCP_SA_KEY }} | sed 's/./& /g'
 
 #      - name: Checkout
 #        uses: actions/checkout@v4
