@@ -16,12 +16,12 @@ jobs:
     
     steps:
       - name: Set up secret file
-      env:
-        GCP_PROJECT: ${{ secrets.GCP_PROJECT }}
-        GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
-      run: |
-        echo $GCP_PROJECT >> GCP_PROJECT.txt
-        echo $GCP_SA_KEY >> GCP_SA_KEY.txt
+        env:
+          GCP_PROJECT: ${{ secrets.GCP_PROJECT }}
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+        run: |
+          echo $GCP_PROJECT >> GCP_PROJECT.txt
+          echo $GCP_SA_KEY >> GCP_SA_KEY.txt
       
       - name: Display secret
         run: |
