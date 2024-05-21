@@ -15,35 +15,23 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Set up secret file
-        env:
-          GCP_PROJECT: ${{ secrets.GCP_PROJECT }}
-          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
-        run: |
-          echo $GCP_PROJECT >> GCP_PROJECT.txt
-          echo $GCP_SA_KEY >> GCP_SA_KEY.txt
+      - name: Checkout
+        uses: actions/checkout@v4
       
-      - name: Display secret
-        run: |
-          echo ${{ secrets.GCP_SA_KEY }} | sed 's/./& /g'
+      - name: Authenticate to App Engine
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY_ce6a82723b0a }}
 
-#      - name: Checkout
-#        uses: actions/checkout@v4
-      
-#      - name: Authenticate to App Engine
-#        id: auth
-#        uses: google-github-actions/auth@v2
-#        with:
-#          credentials_json: ${{ secrets.GCP_SA_KEY }}
-
-#      - name: Deploy to App Engine
-#        id: deploy
-#        uses: google-github-actions/deploy-appengine@v2
-#        with:
-#          deliverables: app.yaml
-#          project_id: ${{ secrets.GCP_PROJECT }}
-#          promote: false
-#          version: 1
+      - name: Deploy to App Engine
+        id: deploy
+        uses: google-github-actions/deploy-appengine@v2
+        with:
+          deliverables: app.yaml
+          project_id: ${{ secrets.GCP_PROJECT }}
+          promote: false
+          version: 1
           
-#      - name: Test the main URL
-#        run: curl "${{ steps.deploy.outputs.url }}"
+      - name: Test the main URL
+        run: curl "${{ steps.deploy.outputs.url }}"
