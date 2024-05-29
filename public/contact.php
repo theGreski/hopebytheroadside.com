@@ -247,7 +247,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POSTALNIK') {
 					<div class="col-sm-8" id="form-container">
 						
 						
-						<form id="form-element" method="POST" action="https://formsubmit.co/a66634fd118e4331b7e90ce81ad5f80f">
+						<form id="form-element" method="POST" action="https://formsubmit.co/roguhema@mailgolem.com">
 							<input type="hidden" name="_subject" value="Website Contact!">
 							<input type="hidden" name="_cc" value="grekowski@gmail.com">
 							<h2 class="display-4 my-4">Contact Form</h2>
