@@ -51,24 +51,7 @@
 		
 	</head>
 	<body class="d-flex flex-column h-100">
-		<header>
-			<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top border-bottom shadow-sm">
-				<a class="navbar-brand" href="./">
-					<img src="static/logo__orange.svg" width="61" height="30" class="d-inline-block" alt="logo">
-				</a>
-				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div id="navbarCollapse" class="navbar-collapse collapse">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="gospel.html">The Gospel Message</a></li>
-						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="audiovideo.html">Audio &amp; Video</a></li>
-						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="contact.html">Contact Us</a></li>
-						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="https://www.facebook.com/#!/groups/891612470967222/" target="_blank" rel="noopener">Follow on Facebook</a></li>
-					</ul>
-				</div>
-			</nav>
-		</header>
+		<?php require('ui.header.php'); ?>
 		
 		<main role="main" class="flex-shrink-0">
 			<div class="container mt-4">
@@ -196,34 +179,7 @@
 			
 		</main>
 		
-		<footer class="footer mt-auto border-top py-5 bg-orange text-white">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm mb-4 mb-sm-0">
-						<img src="static/logo.svg" width="159" height="78" class="d-block mx-auto mx-sm-0" alt="logo">
-					</div>
-					<div class="col-sm">
-						<img src="static/icon-96.png" width="30" height="30" class="d-block" alt="logo">
-						&copy; Hope By The Roadside - part of PR Jenkinson SCIO
-					</div>
-				</div>
-			</div>
-		</footer>
-		
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-		
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155723962-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			
-			gtag('config', 'UA-155723962-1');
-		</script>
+		<?php require('ui.footer.php'); ?>
 		
 	</body>
 </html>
