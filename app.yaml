@@ -1,8 +1,6 @@
 service: hopebytheroadside
 runtime: php81
 env: standard
-#api_version: 1
-#threadsafe: yes
 
 default_expiration: "1m"
 
