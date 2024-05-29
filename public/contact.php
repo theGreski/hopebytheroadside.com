@@ -91,7 +91,7 @@
 		<main role="main" class="flex-shrink-0">
 			
 			<div class="contact-header container text-center px-3 py-3 mt-md-5 pb-mt-4 mx-auto">
-				<h1 class="display-4">Thank You!</h1>
+				<h1 class="display-4">Contact Us!</h1>
 				<p class="lead">
 					We can be contacted in a variety of ways. We have gospel booklets and leaflets which are free of charge and available to anyone who wants them. Please be assured we will never share your details with anyone else.
 				</p>

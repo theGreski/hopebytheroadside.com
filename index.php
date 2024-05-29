@@ -28,6 +28,9 @@ switch ($path) {
     case "/contact.html":
         require "public/contact.php";
         break;
+    case "/contact-done.html":
+        require "public/contact-done.php";
+        break;
     default:
         http_response_code(404);
         exit();

@@ -79,10 +79,8 @@
 				
 				
 				
-				<h1 class="display-4">Contact Us!</h1>
-				<p class="lead">
-					We can be contacted in a variety of ways. We have gospel booklets and leaflets which are free of charge and available to anyone who wants them. Please be assured we will never share your details with anyone else.
-				</p>
+				<h1 class="display-4">Thank You!</h1>
+				
                 <p class="lead">
 					Your message was succesfully submitted.
 				</p>
