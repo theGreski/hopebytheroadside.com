@@ -1,5 +1,5 @@
 <?php
-echo "
+echo <<< HTML
 <header>
 	<nav class='navbar navbar-expand-lg navbar-light bg-white fixed-top border-bottom shadow-sm'>
 		<!--<a class='navbar-brand' href='./'>
@@ -22,4 +22,4 @@ echo "
 		</div>
 	</nav>
 </header>
-";
+HTML;
