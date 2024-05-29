@@ -1,107 +1,3 @@
-<?php
-
-//use google\appengine\api\mail\Message;
-
-// Check for POST request
-//
-if ($_SERVER['REQUEST_METHOD'] === 'POSTALNIK') {
-	
-	syslog(LOG_NOTICE, "CONTACT form received");
-	
-	$name		= html_entity_decode(trim(filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING)), ENT_QUOTES);
-	$email		= html_entity_decode(trim(filter_input(INPUT_POST, "email", FILTER_SANITIZE_STRING)), ENT_QUOTES);
-	$phone		= html_entity_decode(trim(filter_input(INPUT_POST, "phone", FILTER_SANITIZE_STRING)), ENT_QUOTES);
-	$postal		= html_entity_decode(trim(filter_input(INPUT_POST, "postal", FILTER_SANITIZE_STRING)), ENT_QUOTES);
-	$surname	= filter_input(INPUT_POST, "surname", FILTER_SANITIZE_STRING);
-	
-	if (strlen($surname) > 0) {
-		
-		// Set a 400 (bad request) response code and exit.
-        http_response_code(400);
-		
-		// Set the result message
-		//
-		$result = "
-			<div class='text-left alert alert-danger' role='alert'>
-				We were unable to sent your message. Please try again later or give us a call.
-				<button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-					<span aria-hidden='true'>&times;</span>
-				</button>
-			</div>";
-		
-	} else {
-		
-		// Build email content
-		//
-		$email_content = "Person: " . $name . "\r\n\r\nContact email: " . $email;
-		
-		if (strlen($phone) > 0) {
-			$email_content.= "\r\n\r\nPhone: " . $phone;
-		}
-		
-		if (strlen($postal) > 0) {
-			$email_content.= "\r\n\r\nPostal address:\r\n" . $postal;
-		}
-		
-		//if (isset($_POST['bible'])) {
-			$email_content.= "\r\n\r\nFree Bible requested: " . (isset($_POST['bible']) ? "YES"  : "NO");
-		//}
-		
-		$email_content.= "\r\n\r\nFree 'Ultimate Questions' booklet requested: " . (isset($_POST['ultimate']) ? "YES"  : "NO");
-		
-		$email_content.= "\r\n\r\nFree 'Can I Believe The Bible' booklet? requested: " . (isset($_POST['believe']) ? "YES"  : "NO");
-		
-		try {
-			$message = new Message();
-			$message->setSender("Website Contact Form<noreply@eggizoapp.appspotmail.com>");
-			$message->addTo("hopebytheroadside@gmail.com");
-			if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-				$message->setReplyTo($name . "<" . $email . ">");
-			}
-			$message->setSubject("Website Contact from " . $name);
-			$message->setTextBody($email_content);
-			$message->send();
-			
-			
-			// Set the result message
-			//
-			$result = "
-				<div class='text-left alert alert-success' role='alert'>
-					Message sent successfully!
-					<button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-						<span aria-hidden='true'>&times;</span>
-					</button>
-				</div>";
-			
-		} catch (InvalidArgumentException $e) {
-			
-			// Set a 500 (internal server error) response code.
-			//
-			http_response_code(500);
-			
-			// Write to logs
-			//
-			syslog(LOG_ERR, "Could not send the email");
-			syslog(LOG_ERR, $e);
-			
-			// Set the result message
-			//
-			$result = "
-				<div class='text-left alert alert-danger' role='alert'>
-					We were unable to deliver your message. Please try again later or give us a call.
-					<button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-						<span aria-hidden='true'>&times;</span>
-					</button>
-				</div>";
-			
-		}
-		
-	}
-	
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en" class="h-100">
 	<head>
@@ -195,10 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POSTALNIK') {
 		<main role="main" class="flex-shrink-0">
 			
 			<div class="contact-header container text-center px-3 py-3 mt-md-5 pb-mt-4 mx-auto">
-				
-				<?php echo (isset($result) ? $result : ""); ?>
-				
-				<h1 class="display-4">Contact Us!</h1>
+				<h1 class="display-4">Thank You!</h1>
 				<p class="lead">
 					We can be contacted in a variety of ways. We have gospel booklets and leaflets which are free of charge and available to anyone who wants them. Please be assured we will never share your details with anyone else.
 				</p>
@@ -249,6 +142,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POSTALNIK') {
 						
 						<form id="form-element" method="POST" action="https://formsubmit.co/roguhema@mailgolem.com">
 							<input type="hidden" name="_subject" value="Website Contact!">
+							<input type="hidden" name="_next" value="https://www.hopebytheroadside.com/contact-done.html">
 							<h2 class="display-4 my-4">Contact Form</h2>
 							<div class="form-group">
 								<label for="name-FLD">Your name</label>
