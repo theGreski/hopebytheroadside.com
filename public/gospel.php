@@ -45,9 +45,9 @@
 		<link rel="stylesheet" href="static/style.css">
 		
 		<link rel="prefetch" href="./">
-		<link rel="prefetch" href="gospel-explained.php">
-		<link rel="prefetch" href="audiovideo.php">
-		<link rel="prefetch" href="contact.php">
+		<link rel="prefetch" href="gospel-explained.html">
+		<link rel="prefetch" href="audiovideo.html">
+		<link rel="prefetch" href="contact.html">
 		
 	</head>
 	<body class="d-flex flex-column h-100">
@@ -65,9 +65,9 @@
 				</button>
 				<div id="navbarCollapse" class="navbar-collapse collapse">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="gospel.php">The Gospel Message</a></li>
-						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="audiovideo.php">Audio &amp; Video</a></li>
-						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="contact.php">Contact Us</a></li>
+						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="gospel.html">The Gospel Message</a></li>
+						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="audiovideo.html">Audio &amp; Video</a></li>
+						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="contact.html">Contact Us</a></li>
 						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="https://www.facebook.com/#!/groups/891612470967222/" target="_blank" rel="noopener">Follow on Facebook</a></li>
 					</ul>
 				</div>
@@ -120,7 +120,7 @@
 			</div>
 			
 			<div class="container text-center p-5">
-				<a href="gospel-explained.php" class="btn btn-primary btn-lg">and The Good News is&hellip;</a>
+				<a href="gospel-explained.html" class="btn btn-primary btn-lg">and The Good News is&hellip;</a>
 			</div>
 			
 		</main>

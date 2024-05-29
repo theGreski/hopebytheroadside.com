@@ -22,9 +22,9 @@
 				console.log("web address does NOT include WWW but it should");
 				url = url.replace(window.location.host, "www."+window.location.host);
 			}
-			if (window.location.pathname.match("index.php")) { 							// check if PATH includes script name, only applicable to landing page
-				url = url.replace("index.php","");
-			}
+			//if (window.location.pathname.match("index.php")) { 							// check if PATH includes script name, only applicable to landing page
+			//	url = url.replace("index.php","");
+			//}
 			if(window.location.href != url){											// check if url was modified
 				console.log("Redirecting with url changes");
 				//window.location= url;				// similar behavior as a click event
@@ -44,10 +44,10 @@
 		
 		<link rel="stylesheet" href="static/style.css">
 		
-		<link rel="prefetch" href="gospel.php">
-		<link rel="prefetch" href="gospel-explained.php">
-		<link rel="prefetch" href="audiovideo.php">
-		<link rel="prefetch" href="contact.php">
+		<link rel="prefetch" href="gospel.html">
+		<link rel="prefetch" href="gospel-explained.html">
+		<link rel="prefetch" href="audiovideo.html">
+		<link rel="prefetch" href="contact.html">
 		
 	</head>
 	<body class="d-flex flex-column h-100">
@@ -61,8 +61,8 @@
 				</button>
 				<div id="navbarCollapse" class="navbar-collapse collapse">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="gospel.php">The Gospel Message</a></li>
-						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="audiovideo.php">Audio &amp; Video</a></li>
+						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="gospel.html">The Gospel Message</a></li>
+						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="audiovideo.html">Audio &amp; Video</a></li>
 						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="contact.html">Contact Us</a></li>
 						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="https://www.facebook.com/#!/groups/891612470967222/" target="_blank" rel="noopener">Follow on Facebook</a></li>
 					</ul>
@@ -148,7 +148,7 @@
 						How certain are you that whatever you stated in your answer will give you the <b class="text-orange">assurance of an eternity with God in heaven</b>?<br>
 						The reason for this challenge is because when we look into God's message to humanity &hellip; the Bible &hellip; it actually tells us clearly that none of the above will stand us in any good stead for eternity.<br>
 						If we look at <b>Ephesians chapter 2, verses 8 and 9</b> tell us that we are "<b class="text-orange">saved</b>" by nothing else other than God's grace which comes through faith in Him. It specifically says that we are not saved by "<b>works</b>", and that includes that good-living so many depend on, and church-attendance and involvement too.<br><br>
-						<a href="contact.php">You can find out more about eternal hope and security.</a>
+						<a href="contact.html">You can find out more about eternal hope and security.</a>
 					</div>
 				</div>
 				
@@ -189,7 +189,7 @@
 					These are some of the big questions in life. The Bible brings us answers to these important questions, and explains how we can have our sins forgiven through believing in the Lord Jesus Christ.
 				</p>
 				<p>
-					<a href="gospel.php" >Find out more &hellip;</a>
+					<a href="gospel.html" >Find out more &hellip;</a>
 				</p>
 				
 			</div>

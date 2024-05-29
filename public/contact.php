@@ -126,9 +126,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POSTALNIK') {
 				console.log("web address does NOT include WWW but it should");
 				url = url.replace(window.location.host, "www."+window.location.host);
 			}
-			if (window.location.pathname.match("index.php")) { 							// check if PATH includes script name, only applicable to landing page
-				url = url.replace("index.php","");
-			}
+			//if (window.location.pathname.match("index.php")) { 							// check if PATH includes script name, only applicable to landing page
+			//	url = url.replace("index.php","");
+			//}
 			if(window.location.href != url){											// check if url was modified
 				console.log("Redirecting with url changes");
 				//window.location= url;				// similar behavior as a click event
@@ -149,9 +149,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POSTALNIK') {
 		<link rel="stylesheet" href="static/style.css">
 		
 		<link rel="prefetch" href="./">
-		<link rel="prefetch" href="gospel.php">
-		<link rel="prefetch" href="gospel-explained.php">
-		<link rel="prefetch" href="audiovideo.php">
+		<link rel="prefetch" href="gospel.html">
+		<link rel="prefetch" href="gospel-explained.html">
+		<link rel="prefetch" href="audiovideo.html">
 		
 		<style>
 			#form-element {
@@ -183,9 +183,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POSTALNIK') {
 				</button>
 				<div id="navbarCollapse" class="navbar-collapse collapse">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="gospel.php">The Gospel Message</a></li>
-						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="audiovideo.php">Audio &amp; Video</a></li>
-						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="contact.php">Contact Us</a></li>
+						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="gospel.html">The Gospel Message</a></li>
+						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="audiovideo.html">Audio &amp; Video</a></li>
+						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="contact.html">Contact Us</a></li>
 						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="https://www.facebook.com/#!/groups/891612470967222/" target="_blank" rel="noopener">Follow on Facebook</a></li>
 					</ul>
 				</div>
@@ -247,7 +247,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POSTALNIK') {
 					<div class="col-sm-8" id="form-container">
 						
 						
-						<form id="form-element" method="post" action="https://formsubmit.co/a66634fd118e4331b7e90ce81ad5f80f">
+						<form id="form-element" method="POST" action="https://formsubmit.co/a66634fd118e4331b7e90ce81ad5f80f">
 							<input type="hidden" name="_subject" value="Website Contact!">
 							<input type="hidden" name="_cc" value="grekowski@gmail.com">
 							<h2 class="display-4 my-4">Contact Form</h2>

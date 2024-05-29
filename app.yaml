@@ -37,17 +37,3 @@ handlers:
 
 entrypoint:
   serve index.php
-
-# Application scripts
-#- url: /gospel.php
-#  script: gospel.php
-#  secure: always
-#- url: /gospel-explained.php
-#  script: gospel-explained.php
-#  secure: always
-#- url: /audiovideo.php
-#  script: audiovideo.php
-#  secure: always
-#- url: /contact.php
-#  script: contact.php
-#  secure: always

@@ -45,9 +45,9 @@
 		<link rel="stylesheet" href="static/style.css">
 		
 		<link rel="prefetch" href="./">
-		<link rel="prefetch" href="gospel.php">
-		<link rel="prefetch" href="audiovideo.php">
-		<link rel="prefetch" href="contact.php">
+		<link rel="prefetch" href="gospel.html">
+		<link rel="prefetch" href="audiovideo.html">
+		<link rel="prefetch" href="contact.html">
 		
 	</head>
 	<body class="d-flex flex-column h-100">
@@ -65,9 +65,9 @@
 				</button>
 				<div id="navbarCollapse" class="navbar-collapse collapse">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="gospel.php">The Gospel Message</a></li>
-						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="audiovideo.php">Audio &amp; Video</a></li>
-						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="contact.php">Contact Us</a></li>
+						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="gospel.html">The Gospel Message</a></li>
+						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="audiovideo.html">Audio &amp; Video</a></li>
+						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="contact.html">Contact Us</a></li>
 						<li class="nav-item py-2 py-lg-0"><a class="p-2" href="https://www.facebook.com/#!/groups/891612470967222/" target="_blank" rel="noopener">Follow on Facebook</a></li>
 					</ul>
 				</div>
@@ -124,7 +124,7 @@
 			<div class="container-fluid border-top border-bottom py-5">
 				<div class="container">
 					<p class="display-4"><b>WANT TO KNOW MORE?</b></p>
-					<p>If you would like to know more, or would like to receive some booklets or a free Bible, please <a href="contact.php">contact us</a>. We would be glad to help!</p>
+					<p>If you would like to know more, or would like to receive some booklets or a free Bible, please <a href="contact.html">contact us</a>. We would be glad to help!</p>
 				</div>
 			</div>
 			
@@ -132,7 +132,7 @@
 				<p>Want to read the Bible yourself?</p>
 				<div class="row">
 					<div class="col-sm py-1">
-						<a href="contact.php">Request a free Bible</a>
+						<a href="contact.html">Request a free Bible</a>
 					</div>
 					<div class="col-sm py-1">
 						<a href="https://www.blueletterbible.org/" target="_blank" rel="noopener">Read the Bible online with Blue Letter Bible</a>

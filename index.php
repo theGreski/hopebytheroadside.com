@@ -19,10 +19,10 @@ switch ($path) {
     case "/gospel.html":
         require "public/gospel.php";
         break;
-    case "/gospel-explained.php":
+    case "/gospel-explained.html":
         require "public/gospel-explained.php";
         break;
-    case "/audiovideo.php":
+    case "/audiovideo.html":
         require "public/audiovideo.php";
         break;
     case "/contact.html":
