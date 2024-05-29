@@ -249,7 +249,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POSTALNIK') {
 						
 						<form id="form-element" method="POST" action="https://formsubmit.co/roguhema@mailgolem.com">
 							<input type="hidden" name="_subject" value="Website Contact!">
-							<input type="hidden" name="_cc" value="grekowski@gmail.com">
 							<h2 class="display-4 my-4">Contact Form</h2>
 							<div class="form-group">
 								<label for="name-FLD">Your name</label>
