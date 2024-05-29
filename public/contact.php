@@ -1,7 +1,5 @@
 <?php
 
-//date_default_timezone_set('Europe/Dublin');
-
 //use google\appengine\api\mail\Message;
 
 // Check for POST request
@@ -249,7 +247,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POSTALNIK') {
 					<div class="col-sm-8" id="form-container">
 						
 						
-						<form id="form-element" method="post" action="https://formsubmit.co/siyadi8463@jahsec.com">
+						<form id="form-element" method="post" action="https://formsubmit.co/a66634fd118e4331b7e90ce81ad5f80f">
 							<input type="hidden" name="_subject" value="Website Contact!">
 							<input type="hidden" name="_cc" value="grekowski@gmail.com">
 							<h2 class="display-4 my-4">Contact Form</h2>
