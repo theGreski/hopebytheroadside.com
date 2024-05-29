@@ -136,7 +136,7 @@
 							
 							<div class="form-group">
 								<label for="postal-FLD">Postal address</label>
-								<textarea class="form-control" name="postal" id="postal-FLD" rows="4" placeholder="Enter your postal address"></textarea>
+								<textarea class="form-control" name="address" id="postal-FLD" rows="4" placeholder="Enter your postal address"></textarea>
 								<small class="form-text text-muted">required if booklets are selected below</small>
 							</div>
 							
