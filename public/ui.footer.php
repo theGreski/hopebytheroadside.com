@@ -1,5 +1,5 @@
 <?php
-echo "
+echo <<<HTML
 <footer class='footer mt-auto border-top py-5 bg-orange text-white'>
 	<div class='container'>
 		<div class='row'>
@@ -27,4 +27,4 @@ echo "
 	gtag('js', new Date());			
 	gtag('config', 'UA-155723962-1');
 </script>
-";		
+HTML;
