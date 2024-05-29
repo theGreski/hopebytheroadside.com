@@ -2,7 +2,7 @@ service: hopebytheroadside
 runtime: php81
 env: standard
 
-default_expiration: "1m"
+default_expiration: "5m"
 
 handlers:
 
