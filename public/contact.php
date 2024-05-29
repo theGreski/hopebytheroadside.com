@@ -1,12 +1,12 @@
 <?php
 
-date_default_timezone_set('Europe/Dublin');
+//date_default_timezone_set('Europe/Dublin');
 
-use google\appengine\api\mail\Message;
+//use google\appengine\api\mail\Message;
 
 // Check for POST request
 //
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POSTALNIK') {
 	
 	syslog(LOG_NOTICE, "CONTACT form received");
 	

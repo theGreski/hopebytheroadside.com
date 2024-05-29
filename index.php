@@ -16,7 +16,7 @@ switch ($path) {
 		//syslog(LOG_DEBUG, "found app entry");
 		require "public/index.php";
 		break;
-    case "/gospel.php":
+    case "/gospel.html":
         require "public/gospel.php";
         break;
     case "/gospel-explained.php":
@@ -25,7 +25,7 @@ switch ($path) {
     case "/audiovideo.php":
         require "public/audiovideo.php";
         break;
-    case "/contact.php":
+    case "/contact.html":
         require "public/contact.php";
         break;
     default:
