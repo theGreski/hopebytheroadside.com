@@ -249,7 +249,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 					<div class="col-sm-8" id="form-container">
 						
 						
-						<form id="form-element" method="post" action="contact.php">
+						<form id="form-element" method="post" action="https://formsubmit.co/siyadi8463@jahsec.com">
+							<input type="hidden" name="_subject" value="Website Contact!">
+							<input type="hidden" name="_cc" value="grekowski@gmail.com">
 							<h2 class="display-4 my-4">Contact Form</h2>
 							<div class="form-group">
 								<label for="name-FLD">Your name</label>
@@ -266,22 +268,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 							
 							<div class="form-group">
 								<label for="postal-FLD">Postal address</label>
-								<textarea class="form-control" name="postal" id="postal-FLD" rows="4" placeholder="Enter your postal address" required></textarea>
+								<textarea class="form-control" name="postal" id="postal-FLD" rows="4" placeholder="Enter your postal address"></textarea>
 								<small class="form-text text-muted">required if booklets are selected below</small>
 							</div>
 							
 							<div class="custom-control custom-checkbox mb-3">
-								<input type="checkbox" class="custom-control-input" name="bible" id="bible-CHK">
+								<input type="checkbox" class="custom-control-input" name="freebible" id="bible-CHK">
 								<label class="custom-control-label" for="bible-CHK">Free Bible?</label>
 							</div>
 							
 							<div class="custom-control custom-checkbox mb-3">
-								<input type="checkbox" class="custom-control-input" name="ultimate" id="ultimate-CHK">
+								<input type="checkbox" class="custom-control-input" name="ultimatequestionsbooklet" id="ultimate-CHK">
 								<label class="custom-control-label" for="ultimate-CHK">Free "Ultimate Questions" booklet?</label>
 							</div>
 							
 							<div class="custom-control custom-checkbox mb-3">
-								<input type="checkbox" class="custom-control-input" name="believe" id="believe-CHK">
+								<input type="checkbox" class="custom-control-input" name="believebiblebooklet" id="believe-CHK">
 								<label class="custom-control-label" for="believe-CHK">Free "Can I Believe The Bible" booklet?</label>
 							</div>
 							
@@ -289,7 +291,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 								Literature sent to UK and Ireland only!
 							</p>
 							
-							<input type="text" name="surname" id="surname-FLD">
+							<!--<input type="text" name="surname" id="surname-FLD">-->
 							
 							<button type="submit" class="btn btn-lg btn-primary">Submit</button>
 						</form>
@@ -324,7 +326,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			var form = $("#form-element"),
 				wrapper = $("#form-container");
 			
+			$(form).on("change", ":checkbox", function(){
+				var selected = false;
+				$("input[type=checkbox]:checked").each(element => {
+					selected = true;
+				});
+				if (selected == true) {
+					$("#postal-FLD").prop("required", true);
+				} else {
+					$("#postal-FLD").prop("required", false);
+				}
+			});
 			// Set up an event listener for the contact form.
+			/*
 			$(form).submit(function(event) {
 				
 				form.addClass("hidden");
@@ -335,7 +349,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 				//return false;
 				
 			});
-			
+			*/
 		</script>
 		
 		<!-- Global site tag (gtag.js) - Google Analytics -->
