@@ -143,12 +143,12 @@
 							</div>
 							
 							<div class="custom-control custom-checkbox mb-3">
-								<input type="checkbox" class="custom-control-input" name="test[]" value="freebible" id="bible-CHK">
+								<input type="checkbox" class="custom-control-input" name="request" value="freebible" id="bible-CHK">
 								<label class="custom-control-label" for="bible-CHK">Free Bible?</label>
 							</div>
 							
 							<div class="custom-control custom-checkbox mb-3">
-								<input type="checkbox" class="custom-control-input" name="test[]" value="ultimatequestionsbooklet" id="ultimate-CHK">
+								<input type="checkbox" class="custom-control-input" name="request" value="ultimatequestionsbooklet" id="ultimate-CHK">
 								<label class="custom-control-label" for="ultimate-CHK">Free "Ultimate Questions" booklet?</label>
 							</div>
 							
