@@ -119,7 +119,6 @@
 						
 						<form id="form-element" method="POST" action="https://formsubmit.co/fff9ea33aba741cc57ebbd7267756240">
 							<input type="hidden" name="_subject" value="Website Contact!">
-							<input type="hidden" name="_cc" value="grekowski@gmail.com">
 							<input type="text" name="_honey" style="display:none">
 							<input type="hidden" name="_next" value="https://www.hopebytheroadside.com/contact-done.html">
 							<h2 class="display-4 my-4">Contact Form</h2>
